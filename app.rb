@@ -1,9 +1,9 @@
-require 'persn'
+require 'person'
 
 put "What is your character's full name?"
-      name = gets.chimp
+  name = gets.chimp
 puts "What is your character's age?"
-age = gets
+  age = gets
 
 dude = person.new(name :name, age : age)
 
