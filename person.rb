@@ -26,7 +26,7 @@ class Person
   end
 
   def birthyear
-    age - Time.now.to_i
+    Time.now.year - age
   end
 
   def say(words)
@@ -39,14 +39,14 @@ class Person
 
   def energy_level
     case @energy
-    when -100..-1
-      'OMG ABOUT TO DIE!'
-    when 0..
-      'tired'
-    when 4..6
-      'doing ok'
-    when 6..10
-      'ready to go'
+      when -100..-1
+        "OMG ABOUT TO DIE!"
+      when 0..3
+        "tired"
+      when 4..6
+        "doing ok"
+      when 6..10
+        "ready to go"
     end
   end
 
