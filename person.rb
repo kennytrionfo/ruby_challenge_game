@@ -1,4 +1,5 @@
 class Person
+  require_relative 'helper'
   include Helper
   attr_accessor :attributes, :energy
 
@@ -39,13 +40,13 @@ class Person
   def energy_level
     case @energy
     when -100..-1
-      "OMG ABOUT TO DIE!
+      'OMG ABOUT TO DIE!'
     when 0..
-      "tired'
+      'tired'
     when 4..6
-      "doing ok"
+      'doing ok'
     when 6..10
-      "ready to go"
+      'ready to go'
     end
   end
 

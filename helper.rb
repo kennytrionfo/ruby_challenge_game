@@ -1,5 +1,5 @@
 module Helper
-  def first_name
+  def self.first_name
     "yllib".reverse.caplitalize
   end
 end
