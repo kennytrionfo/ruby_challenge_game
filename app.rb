@@ -34,22 +34,20 @@ dude.run()
 dude.say "Alright, I am #{dude.energy_level}"
 
 if dude.energy > 5
-dude.say "Need me to grab you anything? (y/n)"
-while answer = gets.chomp {
-    case answer.uppercase
-      when condition
-         (answer == 'y')
+dude.say "Need me to grab you anything? (Y/n)"
+while answer = gets.chomp 
+    case answer.upcase
+    when 'Y'
         dude.run
         dude.say "Here you go."
         dude.say "Alright, now I'm #{dude.energy_level}"
         dude.say "Need anything else? (Y/n)"
-      when answer == 'n'
+      when 'N'
         dude.say "thank god!"
-      exit
-    else
-    puts "what?"
-  end
-  }
+        exit
+      else
+        puts "what?"
+      end
 
     end
 end

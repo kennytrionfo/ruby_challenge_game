@@ -4,7 +4,7 @@ def is_equal(a, b)
   a == b
 end
 
-def is_not_eqal(a, b)
+def is_not_equal(a, b)
   a != b
 end
 
