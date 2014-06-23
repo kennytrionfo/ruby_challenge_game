@@ -1,3 +1,5 @@
+require_relative 'person'
+
 def is_equal(a, b)
   a == b
 end

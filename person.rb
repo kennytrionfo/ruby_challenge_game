@@ -1,16 +1,16 @@
-class Person
   require_relative 'helper'
   include Helper
+class Person
   attr_accessor :attributes, :energy
 
-  def initalize(attributes = {})
+  def initialize(attributes = {})
     @attributes = attributes
     @energy = 10
   end
 
   # This returns a string of the person's name
   def name
-    attributes(:name)
+    @attributes[:name]
   end
 
   def first_name
@@ -22,7 +22,7 @@ class Person
   end
 
   def age
-    attributes[age]
+    @attributes[:age]
   end
 
   def birthyear
@@ -30,7 +30,7 @@ class Person
   end
 
   def say(words)
-    puts 'words'
+    puts words
   end
 
   def run

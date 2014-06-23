@@ -3,11 +3,11 @@ require_relative 'person'
 puts "What is your character's full name?"
   name = gets.chomp
 puts "What is your character's age?"
-  age = gets
+  age = gets.chomp.to_i
 
-#my stuff, replacing the apps stuff below.
-dude = name
-# dude = person.new(name: name, age: age)
+#my stuff.
+# dude = name
+dude = Person.new(name: name, age: age)
 
 # my stuff
 # def say
